@@ -3,6 +3,7 @@ body {
 	color: #777777;
 	margin: 0;
 	padding: 0; 
+	background-color: #333333;
 }
 
 h1, h2, h3 {
@@ -14,7 +15,12 @@ section > h1, section > h2 {
 }
 
 header {
-	width: 960px;
+	background-color:#fff;
+	height: 80px;
+}
+
+.container {
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -46,27 +52,27 @@ a.navlink {
 main {
 	clear: both;
 	border-top: 2px solid #cccccc;
-}
-
-.container {
-	width: 960px;
-	margin: 0 auto;
+	background-color: #000;
 }
 
 .section1 {
 	float: left;
-	width: 650px;
+	background-color: #fff;
+	max-width: 650px;
 	border: 2px solid #dddddd;
 	margin: 50px 0;
 	font-size: 18px;
-	line-height: 30px;
-	padding: 10px 25px;
+	line-height: 36px;
+	padding: 10px 45px;
 	-webkit	box-sizing: border-box;
 		-moz box-sizing: border-box;
 			box-sizing: border-box;
 }
 
-.section1 > hr {border: 2px #dddddd solid}
+.section1 > hr {
+	border: 2px #dddddd solid;
+	margin: 20px 0 15px 0;
+}
 
 #bio-img {
 	float: left;
@@ -81,9 +87,10 @@ main {
 
 .section2 {
 	float: left;
-	width: 270px;
+	background-color: #fff;
+	max-width: 270px;
 	border: 2px solid #dddddd;
-	margin: 50px 0 0 25px;
+	margin: 50px 0 0 40px;
 	padding: 0px 25px;
 	-webkit	box-sizing: border-box;
 		-moz box-sizing: border-box;
@@ -105,4 +112,7 @@ a > img {
 .mid-img {
 	margin: 0 8px;
 }
-footer {clear: both;}
+footer {
+	clear: both;
+	margin: 0 0;
+	background-color: #fff;}
