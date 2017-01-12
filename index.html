@@ -15,29 +15,36 @@
 		</div>
 		<nav>
 			<ul class='nav'>
-				<li><a class="navlink" href="#">About</a></li>|
-				<li><a class="navlink" href="#">Portfolio</a></li>|
-				<li><a class="navlink" href="#">Contact</a></li>
+				<li><a class="navlink" href="index.html">About</a></li>|
+				<li><a class="navlink" href="portfolio.html">Portfolio</a></li>|
+				<li><a class="navlink" href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<!--About Me section-->
-		<section id="about">
-			<h2>About Me</h2>
-			<hr>
-			<img alt="my headshot" src="#">
-			<p>This is some text about me. This is some text about me. This is some text about me. This is some text about me. This is some text about me. This is some text about me. This is some text about me. This is some text about me.This is some text about me. This is some text about me. This is some text about me. This is some text about me.</p>
-			<p> This is some text about me. This is some text about me. This is some text about me. This is some text about me.This is some text about me. This is some text about me. This is some text about me. This is some text about me.This is some text about me. This is some text about me. This is some text about me. This is some text about me.</p>
-		</section>
-		<!--Connecdt with Me section-->
-		<section>
-			<h2>Connect with Me</h2>
-			<hr>
-			<img src="#" alt="my github page">
-			<img src="#" alt="my linkedin page">
-			<img src="#" alt="my stack overflow page">
-		</section>
+		<div class="container">
+			<section class="section1">
+				<h1>About Me</h1>
+				<hr>
+				<img id="bio-img" alt="my headshot" src="#">
+				<p>This is some text about me. This is some text about me. This is some text about me. This is some text about me. This is some text about me. This is some text about me. This is some text about me. This is some text about me.This is some text about me. </p>
+				<p class="clear"> This is some text about me. This is some text about me. This is some text about me. This is some text about me.This is some text about me. This is some text about me. This is some text about me. This is some text about me.This is some text about me. This is some text about me. This is some text about me. This is some text about me.</p>
+			</section>
+			<!--Connect with Me section-->
+			<section class="section2">
+				<h2>Connect with Me</h2>
+				<hr>
+				<div class="connect-img">
+					<a href="https://www.github.com/jpetey" target="_blank">
+						<img src="assets/images/git-icon.png" alt="my github page"></a>
+					<a class="mid-img" href="https://www.linkedin.com/in/jeremee-peters" target="_blank">
+						<img class="img-mid" src="assets/images/linked-icon.png" alt="my linkedin page"></a>
+					<a href="#" target="_blank">
+						<img src="assets/images/stack-icon.png" alt="my stack overflow page"></a>
+				</div>
+			</section>
+		</div>
 	</main>
 	<!--Page Footer-->
 	<footer>
