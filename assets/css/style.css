@@ -1,7 +1,7 @@
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
-	margin: 0 0 1000px 0;
+	margin: 0;
 	padding: 0; 
 	background-image: url('../images/skulls.png');
 }
@@ -65,7 +65,7 @@ main {
 	background-color: #fff;
 	max-width: 650px;
 	border: 2px solid #dddddd;
-	margin: 50px 0;
+	margin: 50px 0 200px 0;
 	font-size: 18px;
 	line-height: 36px;
 	padding: 10px 35px;
@@ -93,6 +93,9 @@ main {
 	clear: both;
 }
 
+.clearfix {
+	overflow: auto;
+}
 .section2 {
 	float: left;
 	background-color: #fff;
@@ -142,18 +145,32 @@ footer {
 	bottom: 0;
 }
 
-.folio-item {
+.folio-item-left {
 	float: left;
 	height: 200px;
     width: 265px;
     position: relative;
+    margin: 25px 0px;
+}
+
+.folio-item-right {
+	float: right;
+	height: 200px;
+    width: 265px;
+    position: relative;
+    margin: 25px 0px;
 }
 
 .folio-img {
-	background-image: url('../images/portfolio/hangman.jpg');
-    height: 200px;    
+	height: 200px;    
     width: 265px;  
 }
+
+#hangman {background-image: url('../images/portfolio/hangman.jpg');}
+#rpg {background-image: url('../images/portfolio/rpg.jpg');}
+#trivia {background-image: url('../images/portfolio/trivia.jpg');}
+#info-widget {background-image: url('../images/portfolio/info-widget.jpg');}
+#rock-paper {background-image: url('../images/portfolio/rock-paper.jpg');}
 
 div.folio-img:after {
     content: "";
@@ -169,6 +186,7 @@ div.folio-img:after {
 
 div.folio-img:hover:after {
     opacity: 1;
+    cursor: pointer;
 }
 
 .folio-title {
@@ -180,8 +198,9 @@ div.folio-img:hover:after {
   	margin: 0px;
   	padding-top: 10px;
   	position: relative;
-  	top: -75px;
+  	top: -65px;
   	text-align: center;
+  	width: 265px;
  }
 
 form > label {margin-top: 10px;}
