@@ -42,7 +42,13 @@ nav > ul {list-style: none;}
 
 ul.nav > li {
 	display: inline-block;
-	padding: 0 10px;
+	padding: 0;
+}
+
+#mid-nav:after, #mid-nav:before {
+	content: "|";
+	color: #dddddd;
+	padding: 0px 10px;
 }
 
 a.navlink {
@@ -50,9 +56,7 @@ a.navlink {
 	text-decoration: none;
 }
 
-a.navlink:hover {
-	color: #4aaaa5;
-}
+a.navlink:hover {color: #4aaaa5;}
 
 main {
 	clear: both;
