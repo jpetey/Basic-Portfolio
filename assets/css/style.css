@@ -104,7 +104,7 @@ blockquote {
 }
 
 .clearfix {
-	overflow: auto;
+	overflow: hidden;
 }
 .section2 {
 	float: left;
